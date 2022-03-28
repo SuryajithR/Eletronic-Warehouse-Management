@@ -30,7 +30,13 @@
                                 <input type="password" class="form-control" name="password" id="pwd1" required=""
                                        autocomplete="new-password">
                             </div>
-                            <button type="submit" class="btn btn-primary btn-lg float-right">Login</button>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-lg float-right">Login</button>
+                            </div>
+                            <br><br><br><br>
+                            <div class="form-group4" align="center">
+                                <p>Don't have an account? <a href="{% url 'signup' %}" class="link-info">Register here</a></p>
+                            </div>
                             {% csrf_token %}
                         </form>
                     </div>
